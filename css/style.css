@@ -1,0 +1,124 @@
+ body{
+  margin:0;
+  padding:0;
+  background:white;
+  
+}
+.loginPage{
+  width:340px;
+  background:rgb(255, 255, 255);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius:5px;
+  padding:5px;
+  margin:auto;
+  margin-top:140px;
+}
+.loginPage .LoginGretting{
+  text-align:center;
+  margin-top:20px;
+}
+.loginPage .LoginPagename{
+  background:white;
+  width:340px;
+  border-radius:5px;
+  height:50px;
+}
+.loginPage .LoginPagename h1{
+  color:#636363;
+  font-size:21px;
+  text-transform:uppercase;
+  word-spacing:2px;
+  text-align:center;
+  font-weight:800;
+  letter-spacing:0.5px;
+  margin-top:0px;
+  display:inline-block;
+  border:0px solid red;
+  margin-left:10px;
+  margin-top:25px;
+
+}
+.loginPage .form input{
+  width:295px;
+  padding:16px 13px;
+  margin-top:30px;
+  margin-left:10px;
+  background:white;
+  border-radius:3px;
+  outline:none;
+  border:none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-size:17px;
+}
+.form .messageDiv{
+  margin-top:15px;
+  display:block;
+}
+.form #message{
+  margin-left:10px;
+  
+}
+.success{
+  color:green;
+  
+}
+.error{
+  color:#ec2500;
+  
+}
+.loginPage .form button{
+  padding:13px 13px;
+  width:320px;
+  margin-left:10px;
+  margin-top:30px;
+  background:linear-gradient(to right,#9BAEE4,#93BAE1,#8DC6E1,#82D3DA,#7CDCD5,#73E9D3);
+  border:none;
+  color:white;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing: 0.5px;
+  border-radius:3px;
+  word-spacing:1px;
+  text-shadow:0px 0px 0.8px #000000;
+}
+.loginPage .form button:hover{
+  border:none;
+  outline:none;
+  background:linear-gradient(to left,#9BAEE4,#93BAE1,#8DC6E1,#82D3DA,#7CDCD5,#73E9D3);
+}
+
+.loginPage .loginLink{
+ background:;
+ padding-bottom:3px;
+ 
+}
+.loginPage .loginLink p{
+  text-align:center;
+  font-weight:400;
+  font-size:16px;
+  background:;
+  padding-top:10px;
+}
+.loginPage .loginLink p a{
+  color:black;
+  font-weight:500;
+  margin-left:4px;
+}
+/* responsivre  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

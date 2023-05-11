@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Application</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.chat-box {
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+	overflow-y: scroll;
+	max-height: 400px;
+}
+
+.message {
+	margin-bottom: 20px;
+}
+
+.sender {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.content {
+	font-size: 16px;
+}
+
+.input-box {
+	display: flex;
+	margin-top: 20px;
+}
+
+input[type="text"] {
+	flex-grow: 1;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+}
+
+button {
+	padding: 10px;
+	background-color: #008CBA;
+	color: white;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="chat-box">
+			<div class="message">
+				<p class="sender">User A</p>
+				<p class="content">Hi, how are you doing?</p>
+			</div>
+			<div class="message">
+				<p class="sender">User B</p>
+				<p class="content">I'm good, thanks for asking. How about you?</p>
+			</div>
+			<div class="message">
+				<p class="sender">User A</p>
+				<p class="content">I'm doing well too. Just wanted to check in and see how you were doing.</p>
+			</div>
+		</div>
+		<div class="input-box">
+			<input type="text" placeholder="Type your message here...">
+			<button>Send</button>
+		</div>
+	</div>
+</body>
+</html>

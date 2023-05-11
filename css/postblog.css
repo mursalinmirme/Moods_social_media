@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+Bengali:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+/*Fonst
+font-family: 'Noto Sans Bengali', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #ffffff;
+}
+.topbar {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(147, 147, 151);
+}
+.topbar .topbarWrep {
+  background: #ffffff;
+  display: flex;
+  padding: 10px 20px;
+}
+.topbar .logo {
+  width: 50%;
+}
+.topbar .logo h1 {
+  font-size: 25px;
+  margin-top: 7px;
+  margin-left: 20px;
+  color: #2e036d;
+  font-family: "Bruno Ace SC", cursive;
+}
+.topbar .logo h1 a {
+  color: black;
+  text-decoration: none;
+  font-family: "Bruno Ace SC", cursive;
+}
+.topbar .profile {
+  width: 50%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+.topbar .profile img {
+  width: 40px;
+  height: 40px;
+  margin-top: 3px;
+  border-radius: 50%;
+  border: 2px solid #575757;
+  /*
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    */
+}
+/* css code for postArea page start*/
+.postArea {
+  background: #fff;
+  padding-top: 0px;
+}
+.activePostPg {
+  top: 0;
+  transition: 0.3s;
+}
+.postArea .paTopBar {
+  display: flex;
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  text-align: center;
+  display: block;
+}
+
+.postArea .paTopBar .paTopTitle {
+  margin-left: 25px;
+}
+.postArea .paTopBar .paTopTitle span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f0f0f;
+}
+.paTexArea {
+  border-top: 1px solid rgb(198, 198, 198);
+}
+.postArea .paTexAreaProfil {
+  display: flex;
+  padding: 10px 0px;
+}
+.postArea .paTexAreaProfil .postImage {
+  width: 50px;
+  margin-left: 3.5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.postArea .paTexAreaProfil .postImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.postArea .paTexAreaProfil .pstTitle {
+  margin-left: 10px;
+}
+.postArea .paTexAreaProfil .pstTitle h3 {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.postText {
+  width: 100%;
+}
+.postText .postTextCon {
+  width: 93%;
+  margin: auto;
+}
+.postText .postTextCon form textarea {
+  resize: none;
+  width: 100%;
+  height: 480px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.postText .postTextCon form input {
+  width: 100%;
+  padding: 13px;
+  font-size: 20px;
+  font-weight: 500;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* css code for postArea page end*/
+
+/* post message */
+.postMsgDiv {
+  position: absolute;
+  top: 112px;
+  padding: 20px;
+  left: 39%;
+}
+.postMsgDiv span {
+  background: rgba(60, 222, 31, 0.477);
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .postMsgDiv {
+    right: 0px;
+    left: 10%;
+    top: 60%;
+  }
+  .postMsgDiv span {
+    font-size: 14px;
+    border-radius: 0 0px 0px 0px;
+  }
+}

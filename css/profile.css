@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+Bengali:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+/*Fonst
+font-family: 'Noto Sans Bengali', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #f1f4f8;
+}
+.topbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(147, 147, 151);
+}
+.topbar .topbarWrep {
+  background: #ffffff;
+  display: flex;
+  padding: 10px 20px;
+}
+.topbar .logo {
+  width: 50%;
+}
+.topbar .logo h1 {
+  font-size: 25px;
+  margin-top: 7px;
+  color: #2e036d;
+  font-family: "Bruno Ace SC", cursive;
+}
+.topbar .logo h1 a {
+  color: black;
+  text-decoration: none;
+  font-family: "Bruno Ace SC", cursive;
+}
+.topbar .profile {
+  width: 50%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+.topbar .profile img {
+  width: 40px;
+  height: 40px;
+  margin-top: 3px;
+  border-radius: 50%;
+  border: 2px solid #575757;
+  /*
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    */
+}
+
+/* css code for userProfile page start*/
+/* css code for userProfile page start*/
+/* css code for userProfile page start*/
+
+.userProfile {
+  width: 800px;
+  margin: auto;
+  margin-top: 80px;
+}
+.userProfile .userContai {
+  width: 100%;
+}
+.activeMenu {
+  right: -15px;
+  transition: 0.5s;
+}
+.userProfile .proTopBar {
+  width: 350px;
+  background: #ffff;
+}
+.userProfile .proTopBar .backIcon {
+  padding: 10px;
+}
+.userProfile .proTopBar .backIcon i {
+  font-size: 27px;
+}
+
+.userProfile .profileDesc {
+  /*background:#6c6c6c3d;*/
+  margin-top: 45px;
+}
+.userProfile .profileDesc .proDescWrep {
+  width: 100%;
+  background: #ffff;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.userProfile .profileDesc .proDescWrep .proImg {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.userProfile .profileDesc .proDescWrep .proImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.userProfile .profileDesc .proDescWrep .proName {
+  margin-top: 30px;
+}
+.userProfile .profileDesc .proDescWrep .proName h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.userProfile .profileDesc .proDescWrep .followBtn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 15px;
+}
+.userProfile .profileDesc .proDescWrep .followBtn button {
+  font-size: 16px;
+  padding: 10px;
+  background: #3fa1e2;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.userProfile .profileDesc .proDescWrep .followBtn button i {
+  margin-left: 10px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .followdiv {
+  width: 50%;
+  padding: 20px 75px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep {
+  background: #fff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 5px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep .flwTitle {
+  padding: 5px;
+}
+.userProfile
+  .profileDesc
+  .proDescWrep
+  .flwLkComWrep
+  .flwdivwrep
+  .flwTitle
+  span {
+  font-size: 17px;
+  color: #000000c7;
+  font-family: "Roboto", sans-serif;
+}
+
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep .numFlwer {
+  padding-bottom: 5px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep .numFlwer p {
+  font-size: 19px;
+  font-weight: 600;
+  color: #232323;
+  font-family: "Roboto", sans-serif;
+}
+/*My Post make css code start*/
+.myProfilePost {
+  background: #f2f4f4f5;
+  padding: 10px 0px;
+}
+.myProfilePost .makePostArea {
+  background: ;
+}
+.myProfilePost .makePostArea .mkPostTop {
+  width: 93%;
+  margin: auto;
+  display: flex;
+}
+.myProfilePost .makePostArea .mkPostTop .mkPostTitle {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.myProfilePost .makePostArea .mkPostTop .mkPostTitle h1 {
+  font-size: 21px;
+}
+.myProfilePost .makePostArea .mkPost {
+  display: flex;
+}
+.myProfilePost .makePostArea .mkPost .postImage {
+  width: 50px;
+  margin-left: 3.5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.myProfilePost .makePostArea .mkPost .postImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.myProfilePost .makePostArea .mkPost .pstTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.myProfilePost .makePostArea .mkPost .pstTitle span {
+  font-size: 18px;
+}
+.myProfilePost .makePostArea .makePostBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.myProfilePost .makePostArea .makePostBtn button {
+  width: 93%;
+  border: none;
+  background: #fff;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.myProfilePost .makePostArea .makePostBtn button:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+/*My Post make css code end*/
+
+/* css code for userProfile page end*/
+#postdata {
+  width: 100%;
+  background: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+#postdata .postdataWrep {
+  width: 96%;
+  margin: auto;
+  /* padding-bottom: 10px; */
+}
+.posttop {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border: 0px solid white;
+  padding-top: 5px;
+  display: flex;
+}
+.profilego {
+  width: 50px;
+  height: 50px;
+  border: 3px solid blue;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+  background: #fff;
+  overflow: none;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+.profilego img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.nameanddetails {
+  width: 70%;
+  margin-left: 10px;
+  border: 0px solid white;
+}
+.nameanddetails h1 {
+  color: #000000;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.nameanddetails p {
+  color: #000000;
+  font-size: 15px;
+  margin-top: 5px;
+  float: left;
+}
+.postmenu {
+  width: 30%;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: right;
+}
+.postmenu i {
+  font-size: 20px;
+  color: #b0b3b8;
+  font-weight: 100px;
+}
+.statusbar {
+  width: 100%;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 0px solid #e1dbdb;
+  overflow: none;
+}
+.statusbar h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 25px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.lkandcombox {
+  width: 100%;
+  background: #fff;
+}
+
+.lvLgandlklgwrp {
+  display: flex;
+  border: 0px solid red;
+  padding: 15px 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.likenumber {
+  width: 50%;
+  border: 0px solid red;
+}
+.likenumber p {
+  color: #000;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.comntsnumber {
+  width: 50%;
+  border: 0px solid white;
+}
+.comntsnumber h3 {
+  color: rgb(32, 31, 31);
+  font-size: 15px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.likecommentsherebar {
+  width: 100%;
+  background: #ffffff;
+}
+.likecontainer {
+  width: 100%;
+  border: 0.5px solid #d4d1d1;
+  margin-left: 0px;
+  display: flex;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0px solid #d4d1d1;
+  padding: 6px 0;
+}
+.likel {
+  width: 50%;
+  border-right: 1px solid #cecece;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.likel button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0 130px;
+  border-radius: 4px;
+}
+.likel button:hover {
+  background: rgb(235, 234, 234);
+}
+.likel button img {
+  color: #b0b3b8;
+  width: 35px;
+  margin-top: 0px;
+}
+.commentl {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.commentl .commentBtn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0 130px;
+  border-radius: 4px;
+}
+.commentl .commentBtn:hover {
+  background: rgb(235, 234, 234);
+}
+.commentl img {
+  color: #b0b3b8;
+  width: 30px;
+  margin-top: 5px;
+}
+
+/* css code for userProfile page start*/
+/* css code for userProfile page start*/
+/* css code for userProfile page start*/
+/*My Post make css code start*/
+
+/*comment system design css code start*/
+.commentBox {
+  background: rgb(255, 255, 255);
+  display: none;
+}
+.commentBox .commentInputWrap {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+.commentBox .commentInputWrap .commentMyPic {
+  width: 6%;
+}
+.commentBox .commentInputWrap .commentMyPic img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.commentBox .commentInputWrap .commentInput {
+  width: 94%;
+}
+.commentBox .commentInputWrap .commentInput input {
+  width: 100%;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: #f2f3f4;
+}
+
+.commentBox .showComment {
+  display: ;
+}
+.commentBox .showComment .singleComment {
+  padding: 15px 0;
+}
+.commentBox .showComment .singleComment .singleCommentWrap {
+  display: flex;
+}
+.commentBox .showComment .singleComment .commentPic {
+  width: 40px;
+}
+.commentBox .showComment .singleComment .commentPic img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.commentBox .showComment .singleComment .commentText {
+  display: flex;
+}
+.commentBox .showComment .singleComment .commentText .commentName {
+  max-width: 90%;
+  background: #f2f3f4;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+.commentBox .showComment .singleComment .commentText .commentName p {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+.commentBox .showComment .singleComment .commentText .commentName span {
+  display: block;
+  font-size: 15px;
+  color: #575757;
+  margin-top: 1px;
+}
+.commentBox .showComment .singleComment .commentText .commentMenu {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*comment system design css code end*/
+
+.readMoreBtn {
+  cursor: pointer;
+  color: #121111;
+  background: #d3d5d875;
+  border-radius: 5px;
+}
+.showlessbtn {
+  cursor: pointer;
+  color: #121111;
+  background: #d3d5d875;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 780px) {
+  .userProfile {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .userProfile .profileDesc .proDescWrep .flwLkComWrep .followdiv {
+    padding: 0 5px;
+  }
+  .commentl .commentBtn {
+    padding: 0 70px;
+  }
+  .likel button {
+    padding: 0 70px;
+  }
+}

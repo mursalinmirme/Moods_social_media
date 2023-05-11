@@ -1,0 +1,940 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+Bengali:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+/*Fonst
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Noto Sans Bengali', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #ffffff;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+  background: #f1f4f8;
+}
+.activeContainer {
+  right: 1000px;
+  transition: 2s;
+}
+.container .topbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #ffff;
+  border: 0px solid blue;
+}
+.container .topbar .topbarWrep {
+  background: #ffffff;
+  display: flex;
+  padding: 10px 20px;
+}
+.topbar .logo {
+  width: 50%;
+}
+.topbar .logo h1 {
+  font-size: 25px;
+  margin-top: 7px;
+  color: #2e036d;
+  font-family: "Bruno Ace SC", cursive;
+}
+.topbar .logo h1 a {
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: "Bruno Ace SC", cursive;
+}
+.topbar .profile {
+  width: 50%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  /* background: #2d036d76; */
+}
+.topbar .profile img {
+  width: 40px;
+  height: 40px;
+  margin-top: 3px;
+  border-radius: 50%;
+  border: 2px solid #575757;
+  margin-right: 20px;
+  /*
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  */
+}
+.topbar .profile i {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.contentArea {
+  width: 800px;
+  background: rgba(246, 248, 246, 0.818);
+  margin: auto;
+  margin-top: 80px;
+}
+
+#postdata {
+  width: 100%;
+  background: #ffffff;
+  margin-top: 20px;
+  /* margin-bottom: 0px; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+#postdata .postdataWrep {
+  width: 96%;
+  margin: auto;
+  padding-bottom: 0;
+}
+.posttop {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border: 0px solid white;
+  padding-top: 5px;
+  display: flex;
+}
+.profilego {
+  width: 50px;
+  height: 50px;
+  border: 3px solid blue;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+  background: #fff;
+  overflow: none;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+.profilego img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.nameanddetails {
+  width: 70%;
+  margin-left: 10px;
+  border: 0px solid white;
+}
+.nameanddetails h1 {
+  color: #000000;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.nameanddetails h1 a {
+  color: #000000;
+  text-decoration: none;
+}
+.nameanddetails p {
+  color: #000000;
+  font-size: 15px;
+  margin-top: 5px;
+  float: left;
+}
+.postmenu {
+  width: 30%;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: right;
+  /* background: green; */
+}
+
+.postmenu i {
+  font-size: 20px;
+  color: #b0b3b8;
+  font-weight: 100px;
+}
+.postmenu a {
+  text-decoration: none;
+}
+.postmenu i:hover {
+  background: rgb(228, 224, 224);
+  color: #222223;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -10px;
+}
+.postOption {
+  width: 220px;
+  height: 130px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  margin-top: 50px;
+  right: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.46) 0px 0px 66px, rgba(0, 0, 0, 0.33) 0px 0px 66px;
+  display: none;
+}
+.postOption:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 18px solid rgb(255, 255, 255);
+  border-left: 18px solid transparent;
+  right: 0;
+  top: -17px;
+  position: absolute;
+}
+.postOption ul {
+  border-radius: 5px;
+}
+.postOption ul li {
+  list-style: none;
+  width: 100%;
+  /* background: rgb(255, 255, 255); */
+  border-bottom: 0.5px solid rgb(205, 203, 203);
+  font-size: 17px;
+}
+.postOption ul li a {
+  color: #2a2929;
+  text-decoration: none;
+  font-weight: 500px;
+  display: block;
+  padding: 15px 20px;
+}
+.postOption ul li a:hover {
+  background: rgb(227, 224, 224);
+}
+
+.statusbar {
+  width: 100%;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 0px solid #e1dbdb;
+  overflow: none;
+}
+.statusbar h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  line-height: 25px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.lkandcombox {
+  width: 100%;
+  background: #fff;
+}
+
+.lvLgandlklgwrp {
+  display: flex;
+  border: 0px solid red;
+  padding: 15px 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.likenumber {
+  width: 50%;
+  border: 0px solid red;
+}
+.likenumber p {
+  color: #000;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.comntsnumber {
+  width: 50%;
+  border: 0px solid white;
+}
+.comntsnumber h3 {
+  color: rgb(32, 31, 31);
+  font-size: 15px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.likecommentsherebar {
+  width: 100%;
+  background: #ffffff;
+}
+.likecontainer {
+  width: 100%;
+  border: 0.5px solid #d4d1d1;
+  margin-left: 0px;
+  display: flex;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0px solid #d4d1d1;
+  padding: 6px 0;
+}
+.likel {
+  width: 50%;
+  border-right: 1px solid #cecece;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.likel button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0 130px;
+  border-radius: 4px;
+}
+.likelMyProfile button {
+  padding: 0 50px;
+}
+
+.likel button:hover {
+  background: rgb(235, 234, 234);
+}
+.likel button img {
+  color: #b0b3b8;
+  width: 35px;
+  margin-top: 0px;
+}
+.commentl {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.commentl .commentBtn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0 130px;
+  border-radius: 4px;
+}
+.commentlMyProfile .commentBtn {
+  padding: 0 50px;
+}
+.commentl .commentBtnForMy {
+  padding: 0 70px;
+}
+.commentl .commentBtn:hover {
+  background: rgb(235, 234, 234);
+}
+.commentl img {
+  color: #b0b3b8;
+  width: 30px;
+  margin-top: 5px;
+}
+.commentl .commentBtnForMy {
+  padding: 0 60px;
+}
+
+.likel .likeBtnForMy {
+  padding: 0 60px;
+}
+.likel .likeBtnForMy:hover {
+  background: rgb(235, 234, 234);
+}
+.commentl .commentBtnForMy:hover {
+  background: rgb(235, 234, 234);
+}
+/* css code for userProfile page start*/
+/* css code for userProfile page start*/
+/* css code for userProfile page start*/
+
+.userProfile {
+  background: #ffff;
+  position: fixed;
+  right: -15px;
+  top: 80px;
+  width: 350px;
+  height: 100%;
+  transition: 0.5s;
+  overflow: hidden auto;
+  padding-bottom: 80px;
+}
+.userProfile .userContai {
+  width: 100%;
+}
+.activeMenu {
+  right: -15px;
+  transition: 0.5s;
+}
+.userProfile .proTopBar {
+  width: 350px;
+  background: #ffff;
+}
+.backIcon {
+}
+.backIcon i {
+  font-size: 27px;
+  padding: 10px;
+}
+
+.userProfile .profileDesc {
+  /*background:#6c6c6c3d;*/
+  margin-top: 45px;
+}
+.userProfile .profileDesc .proDescWrep {
+  width: 93%;
+  background: #fff;
+  margin: auto;
+  padding-top: 30px;
+}
+.userProfile .profileDesc .proDescWrep .proImg {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 50%;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+}
+.userProfile .profileDesc .proDescWrep .proImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.userProfile .profileDesc .proDescWrep .proName {
+  margin-top: 20px;
+}
+.userProfile .profileDesc .proDescWrep .proName h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.userProfile .profileDesc .proDescWrep .flwLkComWrep {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .followdiv {
+  width: 50%;
+  padding: 5px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep {
+  background: #fff;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep .flwTitle {
+  padding: 5px;
+}
+.userProfile
+  .profileDesc
+  .proDescWrep
+  .flwLkComWrep
+  .flwdivwrep
+  .flwTitle
+  span {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep .numFlwer {
+  padding-bottom: 5px;
+}
+.userProfile .profileDesc .proDescWrep .flwLkComWrep .flwdivwrep .numFlwer p {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+/*My Post make css code start*/
+.myProfilePost {
+  background: #6c6c6c3d;
+  padding: 10px 0px;
+}
+.myProfilePost .makePostArea {
+  background: #fff;
+}
+.myProfilePost .makePostArea .mkPostTop {
+  width: 93%;
+  margin: auto;
+  display: flex;
+}
+.myProfilePost .makePostArea .mkPostTop .mkPostTitle {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.myProfilePost .makePostArea .mkPostTop .mkPostTitle h1 {
+  font-size: 21px;
+}
+.myProfilePost .makePostArea .mkPost {
+  display: flex;
+}
+.myProfilePost .makePostArea .mkPost .postImage {
+  width: 50px;
+  margin-left: 3.5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.myProfilePost .makePostArea .mkPost .postImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.myProfilePost .makePostArea .mkPost .pstTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.myProfilePost .makePostArea .mkPost .pstTitle span {
+  font-size: 18px;
+}
+.myProfilePost .makePostArea .makePostBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.myProfilePost .makePostArea .makePostBtn button {
+  width: 93%;
+  border: none;
+  background: #ffff;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.myProfilePost .makePostArea .makePostBtn button a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+.myProfilePost .makePostArea .makePostBtn button:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+/*My Post make css code end*/
+
+/* css code for userProfile page end*/
+
+/* this css code for simply write for users active list */
+
+.usersList {
+  width: 330px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  top: 80px;
+  left: 10px;
+}
+
+.usListTopbar {
+  padding: 20px 10px;
+}
+.usListTopbar h3 {
+  font-size: 18px;
+}
+.singleUsersList {
+  width: 100%;
+  padding: 0 10px;
+}
+.singleUsersListWrap {
+  display: flex;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(227, 217, 217, 0.773);
+}
+.singleUsersList img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.singleUsersList p {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 240px;
+  color: red;
+}
+.singleUsersList .singleUsersListWrap p a {
+  color: #000000;
+  text-decoration: none;
+}
+.singleUsersList span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.singleUsersList .userActive {
+  background: rgb(3, 200, 3);
+}
+.singleUsersList .userInActive {
+  background: rgba(237, 72, 72, 0.933);
+}
+
+/* css code for postArea page start*/
+.postArea {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 1000px;
+}
+.activePostPg {
+  top: 0;
+  transition: 0.3s;
+}
+.postArea .paTopBar {
+  display: flex;
+  background: #fff;
+  padding: 15px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.postArea .paTopBar .paBackIcon i {
+  font-size: 25px;
+}
+.postArea .paTopBar .paTopTitle {
+  margin-left: 25px;
+}
+.postArea .paTopBar .paTopTitle span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f0f0f;
+}
+
+.postArea .paTexAreaProfil {
+  display: flex;
+  padding: 10px 0px;
+}
+.postArea .paTexAreaProfil .postImage {
+  width: 50px;
+  margin-left: 3.5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.postArea .paTexAreaProfil .postImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.postArea .paTexAreaProfil .pstTitle {
+  margin-left: 10px;
+}
+.postArea .paTexAreaProfil .pstTitle h3 {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.postText {
+  width: 100%;
+}
+.postText .postTextCon {
+  width: 93%;
+  margin: auto;
+}
+.postText .postTextCon form textarea {
+  resize: none;
+  width: 100%;
+  height: 436px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.postText .postTextCon form input {
+  width: 100%;
+  padding: 13px;
+  font-size: 20px;
+  font-weight: 500;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* css code for postArea page end*/
+
+/* profile picture upload button design */
+
+.proImg .upload {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 22px;
+  background: rgba(222, 217, 217, 0.988);
+  color: rgb(24, 24, 24);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.proImg .upload a {
+  color: rgb(24, 24, 24);
+}
+
+/*comment system design css code start*/
+.commentBox {
+  background: rgb(255, 255, 255);
+  display: none;
+}
+.commentBox .commentInputWrap {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+.commentBox .commentInputWrap .commentMyPic {
+  width: 6%;
+}
+.commentBox .commentInputWrap .commentPicMyPro {
+  width: 13%;
+}
+.commentBox .commentInputWrap .commentMyPic img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.commentBox .commentInputWrap .commentInput {
+  width: 94%;
+}
+.commentBox .commentInputWrap .commentInputMyPro {
+  width: 87%;
+}
+.commentBox .commentInputWrap .commentInput input {
+  width: 100%;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: #f2f3f4;
+}
+
+.commentBox .commentInputWrap .commentInput .postCommentMyPro {
+  width: 100%;
+}
+.commentBox .showComment .singleComment {
+  padding: 15px 0;
+}
+.commentBox .showComment .singleComment .singleCommentWrap {
+  display: flex;
+}
+.commentBox .showComment .singleComment .commentPic {
+  width: 40px;
+}
+.commentBox .showComment .singleComment .commentPic img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.commentBox .showComment .singleComment .commentText {
+  display: flex;
+}
+.commentBox .showComment .singleComment .commentText .commentName {
+  max-width: 90%;
+  background: #f2f3f4;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+.commentBox .showComment .singleComment .commentText .commentName p {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+.commentBox .showComment .singleComment .commentText .commentName span {
+  display: block;
+  font-size: 15px;
+  color: #575757;
+  margin-top: 1px;
+}
+.commentBox .showComment .singleComment .commentText .commentMenu {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*comment system design css code end*/
+
+/* menu page design start */
+.menuPage {
+  width: 400px;
+  height: 800px;
+  background: #ffffff;
+  position: fixed;
+  top: 55px;
+  right: 0;
+  padding: 5px;
+  display: none;
+}
+.menuPage .myProfileList {
+  background: #ffffff;
+}
+.menuPage .myProfileList li {
+  list-style: none;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 5px;
+}
+.menuPage .myProfileList li:hover {
+  background: rgba(225, 219, 219, 0.718);
+}
+.menuPage .myProfileList li img {
+  width: 40px;
+  height: 40px;
+}
+.menuPage .myProfileList li span {
+  margin-left: 10px;
+}
+.menuPage .menuServices {
+  padding-top: 0px;
+}
+.menuPage .menuServices li {
+  list-style: none;
+  font-size: 17px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px;
+  font-weight: 400;
+}
+.menuPage .menuServices li:hover {
+  background: rgba(225, 219, 219, 0.718);
+}
+.menuPage .menuServices li img {
+  width: 35px;
+  height: 35px;
+}
+.menuPage .menuServices li span {
+  margin-left: 10px;
+}
+.menuPage .logOutBtnarea {
+  background: #ffffff;
+}
+.menuPage .logOutBtnarea li {
+  list-style: none;
+  font-size: 18px;
+  background: rgba(248, 244, 244, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 500;
+}
+.menuPage .logOutBtnarea li:hover {
+  background: rgba(225, 219, 219, 0.718);
+}
+
+/* menu page design end */
+
+/*comment system design css code end*/
+
+.readMoreBtn {
+  cursor: pointer;
+  color: #121111;
+  background: #d3d5d875;
+  border-radius: 5px;
+}
+.showlessbtn {
+  cursor: pointer;
+  color: #121111;
+  background: #d3d5d875;
+  border-radius: 5px;
+}
+
+#activePageBackBtn {
+  display: none;
+}
+#proBackBtn {
+  display: none;
+}
+
+.makebig {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.fadeInUsersActive {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 998px) {
+  .contentArea {
+    width: 100%;
+  }
+  .userProfile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .usersList {
+    display: none;
+  }
+  .likel button {
+    padding: 0 70px;
+  }
+  .commentl .commentBtn {
+    padding: 0 70px;
+  }
+  .commentBox .commentInputWrap .commentMyPic {
+    width: 11%;
+    background: ;
+  }
+  .commentBox .commentInputWrap .commentInput {
+    width: 89%;
+  }
+  .commentBox .commentInputWrap .commentInput input {
+    font-size: 15px;
+  }
+  .userProfile {
+    width: 100%;
+  }
+
+  #activePageBackBtn {
+    display: block;
+  }
+  #proBackBtn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .contentArea {
+    width: 100%;
+  }
+  .userProfile {
+    display: none;
+  }
+  .userProfile {
+    width: 100%;
+  }
+  #activePageBackBtn {
+    display: block;
+  }
+  #proBackBtn {
+    display: block;
+  }
+}

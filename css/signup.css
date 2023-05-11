@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.849);
+  font-family: 'Roboto', sans-serif;
+}
+.regpage {
+  width: 340px;
+  background: rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.regpage .pagename {
+  background: white;
+  width: 340px;
+  border-radius: 5px;
+}
+.regpage .pagename span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+.regpage .form .regMsgDiv {
+  margin-top: 13px;
+}
+.regpage .form .regMsgDiv span {
+  margin-left: 10px;
+}
+.error {
+  color: #fb0000;
+}
+.success {
+  color: green;
+}
+.regpage .form input {
+  width: 295px;
+  padding: 16px 13px;
+  margin-top: 25px;
+  margin-left: 10px;
+  background: white;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-size: 16px;
+}
+
+.regpage .form button {
+  padding: 13px 13px;
+  width: 320px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background: linear-gradient(
+    to right,
+    #9baee4,
+    #93bae1,
+    #8dc6e1,
+    #82d3da,
+    #7cdcd5,
+    #73e9d3
+  );
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  word-spacing: 2px;
+}
+.regpage .form button:hover {
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    to left,
+    #9baee4,
+    #93bae1,
+    #8dc6e1,
+    #82d3da,
+    #7cdcd5,
+    #73e9d3
+  );
+}
+.regpage .loginLink {
+  padding-bottom: 3px;
+  font-family: "Roboto", sans-serif;
+}
+.regpage .loginLink p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 10px;
+}
+.regpage .loginLink p a {
+  color: black;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
